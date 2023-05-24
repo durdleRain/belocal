@@ -139,6 +139,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+    width: 190px;
     -webkit-line-clamp: 3; /* 라인수 */
     -webkit-box-orient: vertical;
     word-wrap:break-word; 
