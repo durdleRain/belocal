@@ -1,15 +1,16 @@
 @import "reset.css";
-@import "./theme.css";
-@import "./category.css";
-@import "./navbar.css";
-@import "./location.css";
-@import "./header.css";
-@import "./posting.css";
-@import "./footer.css";
-@import "./chatList.css";
-/* @import "./message/chatroom.css"; */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* TODO 한글/영어 폰트지정 따로해야함 */
+/* @font-face {
+    font-family: 'Inter';
+    src: url();
+    unicode-range: ;
+}
+@font-face {
+    font-family: ;
+    src: url();
+    unicode-range: ;
+} */
 
 :root {
     /*color*/
