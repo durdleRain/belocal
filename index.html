@@ -6,7 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/location.js" defer></script>
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/index/header.css">
+  <link rel="stylesheet" href="./css/index/category.css">
+  <link rel="stylesheet" href="./css/index/location.css">
+  <link rel="stylesheet" href="./css/index/theme.css">
+  <link rel="stylesheet" href="./css/index/posting.css">
+  <link rel="stylesheet" href="./css/index/footer.css">
+  <script src="./js/index/location.js" defer></script>
   <title>BeLocal Main</title>
 </head>
 
@@ -15,16 +22,15 @@
   <header>
     <div class="header__wrap">
       <div class="header__img">
-        <img src="./images/main-city.jpg" alt="">
+        <img src="./images/index-city.jpg" alt="">
       </div>
 
       <div class="header__search">
-        <img class="header__search-icon" src="./images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <img class="header__search-icon" src="./images/icon/icon-search.svg" alt="">
         <button class="header__search-bar" type="button"><span>검색해보셈 ㅋ</span></button>
       </div>
     </div>
   </header>
-
 
   <main>
     <!-- category -->
@@ -36,49 +42,49 @@
       <div class="category__items-box">
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/icon-category.svg" alt="">
           </div>
           <p class="category__text">카테고리이름</p>
         </a>
@@ -88,6 +94,7 @@
 
     <!-- theme -->
     <section class="theme">
+      <!-- TODO theme title 영역 완성하기 -->
       <!-- <div class="theme__title-box">
         <h2 class="theme__title">Theme</h2>
         <a href="#" class="theme__link">더보기 &gt;</a>
@@ -103,7 +110,7 @@
         <!-------------- theme module start -------------->
         <div class="theme-box-area">
           <div class="theme-box-pic-area">
-            <img src="/images/theme-sample.png" alt="">
+            <img src="/images/index-city.jpg" alt="">
           </div><!--theme-box-pic-area-->
 
           <div class="profile-outter-box">
@@ -135,7 +142,7 @@
 
               <div class="profile-status-area">
                 <div class="status-icon">
-                  <img src="/images/reservation-ok-icon--.svg" alt="">
+                  <img src="/images/icon/icon-reservation-ok.svg" alt="">
                 </div><!--status-icon-->
 
                 <div class="status-text">예약가능</div>
@@ -149,7 +156,7 @@
         <!-------------- theme module start -------------->
         <div class="theme-box-area">
           <div class="theme-box-pic-area">
-            <img src="/images/theme-sample.png" alt="">
+            <img src="/images/index-city.jpg" alt="">
           </div><!--theme-box-pic-area-->
 
           <div class="profile-outter-box">
@@ -177,7 +184,7 @@
 
               <div class="profile-status-area">
                 <div class="status-icon">
-                  <img src="/images/reservation-ok-icon.svg" alt="">
+                  <img src="/images/icon/icon-reservation-ok.svg" alt="">
                 </div><!--status-icon-->
 
                 <div class="status-text">예약가능</div>
@@ -194,73 +201,47 @@
 
 
     <!-- location -->
-    <section id="location">
-      <div class="section-title">
+    <section class="location">
+      <div class="location__title">
         <h1>location</h1>
         <a href="">더보기></a>
       </div>
-
-      <div class="location-image">
-        <input type="radio" name="slide" id="slide01" checked>
-        <input type="radio" name="slide" id="slide02">
-        <input type="radio" name="slide" id="slide03">
-        <input type="radio" name="slide" id="slide04">
-        <input type="radio" name="slide" id="slide05">
-
-        <div class="slide-wrap">
-          <ul class="slide-list">
-            <li>
-              <a>
-                <img src="./images/location01.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location02.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location03.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location04.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location05.jpg">
-              </a>
-            </li>
-
-            <div class="slide-control">
-              <div class="control01">
-                <label for="slide05" class="left"></label>
-                <label for="slide02" class="right"></label>
-              </div>
-              <div class="control02">
-                <label for="slide01" class="left"></label>
-                <label for="slide03" class="right"></label>
-              </div>
-              <div class="control03">
-                <label for="slide02" class="left"></label>
-                <label for="slide04" class="right"></label>
-              </div>
-              <div class="control04">
-                <label for="slide03" class="left"></label>
-                <label for="slide05" class="right"></label>
-              </div>
-              <div class="control05">
-                <label for="slide04" class="left"></label>
-                <label for="slide01" class="right"></label>
-              </div>
-            </div>
-          </ul>
+    
+      <div class="location__slider">
+        <div class="location__images">
+          <div class="location__image">
+            <img src="./images/location01.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location02.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location03.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location04.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location05.jpg" alt="">
+          </div>
+        </div>
+    
+        <div class="location__nav-buttons">
+          <div class="location__prev-button">
+            <img src="./images/icon/icon-left-arrow.svg">
+          </div>
+          <div class="location__next-button">
+            <img src="./images/icon/icon-right-arrow.svg">
+          </div>
+        </div>
+        <div class="location__nav-dots">
+          <span class="location__dot active"></span>
+          <span class="location__dot"></span>
+          <span class="location__dot"></span>
+          <span class="location__dot"></span>
+          <span class="location__dot"></span>
         </div>
       </div>
-
     </section>
     <!-- location End -->
 
@@ -273,7 +254,7 @@
       <div class="posting__container">
         <a href="" class="posting__feed">
           <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
+            <img src="./images/index-city.jpg" alt="">
           </div>
           <div class="posting__detail">
             <div class="posting__profile">
@@ -300,7 +281,7 @@
         </a>
         <a href="" class="posting__feed">
           <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
+            <img src="./images/index-city.jpg" alt="">
           </div>
           <div class="posting__detail">
             <div class="posting__profile">
@@ -325,7 +306,7 @@
         </a>
         <a href="" class="posting__feed">
           <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
+            <img src="./images/index-city.jpg" alt="">
           </div>
           <div class="posting__detail">
             <div class="posting__profile">
@@ -352,7 +333,7 @@
         </a>
         <a href="" class="posting__feed">
           <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
+            <img src="./images/index-city.jpg" alt="">
           </div>
           <div class="posting__detail">
             <div class="posting__profile">
@@ -377,11 +358,7 @@
             </div>
           </div>
         </a>
-
-
-
       </div>
-
     </section>
     <!-- posting End-->
 
