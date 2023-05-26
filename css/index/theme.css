@@ -1,3 +1,40 @@
+/*====== 가로 스크롤 설정 영역 ======*/
+.theme {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* gap: 10px; */
+}
+
+.theme__title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: var(--section-padding);
+    margin-bottom: var(--title-contents-gap);
+}
+
+.theme__title{
+    font-size: var(--font-size-large18);
+    font-weight: var(--font-weight-bold);
+}
+
+.theme__container{
+    /* width: 390px;
+    height: 600px; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-content: center; */
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+}
+
+.theme__container::-webkit-scrollbar{
+    display: none;
+}
+
 /*====== theme-box-area ===========*/
 
 .theme-box-area {
@@ -177,34 +214,4 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-}
-
-/*====== 가로 스크롤 설정 영역 ======*/
-.theme {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 390px;
-    height: 410px;
-    margin: 23px 0;
-    padding: 0 2px;
-    /* gap: 10px; */
-}
-
-.theme__container{
-    /* width: 390px;
-    height: 600px; */
-    display: flex;
-    /* justify-content: center; */
-    /* align-content: center; */
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    gap: 20px;
-}
-
-.theme__container::-webkit-scrollbar{
-    display: none;
 }
