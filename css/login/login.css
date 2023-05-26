@@ -5,6 +5,7 @@
     padding: 0 60px;
 }
 
+/* 뒤로가기 버튼 */
 .login__undo{
     display: flex;
     width: 100%;
@@ -41,8 +42,10 @@
     color: var(--color-point-blue);
     font-weight: var(--font-weight-bold);
 }
-
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+
 
 
 /* input 영역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -83,7 +86,7 @@
 .login__pw{
     width: 100%;
     height: 40px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .login__pw img{
@@ -114,7 +117,7 @@
 .login__btn-wrap{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     margin-bottom: 16px
 }
 
@@ -155,7 +158,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    padding: 16px 4px;
+    padding: 8px 4px;
 }
 
 /* 자동로그인 부분 */
@@ -218,7 +221,8 @@
 /* sns 로그인 버튼 */
 .login__social{
     display: flex;
-    width: 240px;
+    /* width: 240px; */
+    width: 100%;
     height: 40px;
     justify-content: center;
     align-items: center;
