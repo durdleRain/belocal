@@ -1,17 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
+/*====== 가로 스크롤 설정 영역 ======*/
+.theme {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* gap: 10px; */
+    margin-bottom: var(--section-margin-bottom);
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
+.theme__title-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: var(--section-padding);
+    margin-bottom: var(--title-contents-gap);
 }
 
+.theme__title{
+    font-size: var(--font-size-large18);
+    font-weight: var(--font-weight-bold);
+}
+
+.theme__container{
+    /* width: 390px;
+    height: 600px; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-content: center; */
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+}
+
+.theme__container::-webkit-scrollbar{
+    display: none;
+}
 
 /*====== theme-box-area ===========*/
+
 .theme-box-area {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -23,7 +51,9 @@ body {
     /* object-fit: cover; */
     /* overflow: auto; */
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-}.theme-box-pic-area {
+}
+
+.theme-box-pic-area {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -37,7 +67,9 @@ body {
     /* object-fit: fill; */
     overflow: auto;
     margin-bottom: -10px;
-}.theme-box-pic-area img {
+}
+
+.theme-box-pic-area img {
     width: 100%;
     height: 100%;
 }
@@ -67,6 +99,7 @@ body {
     /* background-color: blue; */
     gap: 4px;
 }
+
 .profile-pic {
     display: flex;
     /* flex-direction: column; */
@@ -78,10 +111,12 @@ body {
     border-radius: 50%;
     overflow:auto;
 }
+
 .profile-pic img {
     width: 100%;
     height: 100%;
 }
+
 .profile-id-text {
     display: flex;
     flex-direction: column;
@@ -92,6 +127,7 @@ body {
     color: #222222;
 
 }
+
 .profile-text-area-outter {
     display: flex;
     flex-direction: column;
@@ -104,6 +140,7 @@ body {
     /* background-color: blueviolet; */
     
 }
+
 .profile-text-title-area {
     display: flex;
     flex-direction: column;
@@ -115,6 +152,7 @@ body {
     /* background-color: red; */
     /* overflow: ; */
 }
+
 .profile-text-title-area h2 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
@@ -133,6 +171,7 @@ body {
     /* background-color:blanchedalmond; */
     margin-bottom: 0px;
 }
+
 .profile-text-contents-area p {
     display: flex;
     flex-direction: column;
@@ -156,12 +195,14 @@ body {
     /* background-color: chartreuse; */
     gap: 2px;
 }
+
 .status-text {
     font-family: 'Noto Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
     color:#182CE3;
 }
+
 .status-icon {
     display: flex;
     justify-content: center;
@@ -169,36 +210,9 @@ body {
     height: 20px;
     /* overflow: auto; */
 }
+
 .status-icon img {
     width: 100%;
     height: 100%;
     overflow: auto;
-}
-
-/*====== 가로 스크롤 설정 영역 ======*/
-.theme {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 390px;
-    height: 410px;
-    margin: 23px 0;
-    padding: 0 2px;
-    /* gap: 10px; */
-}
-.theme__container{
-    /* width: 390px;
-    height: 600px; */
-    display: flex;
-    /* justify-content: center; */
-    /* align-content: center; */
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    gap: 20px;
-}
-.theme__container::-webkit-scrollbar{
-    display: none;
 }
