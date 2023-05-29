@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <!-- TODO 1. 이미지 소스 정상적으로 수정 -->
   <!-- header -->
   <header>
     <div class="header__wrap">
@@ -93,19 +94,18 @@
     <!-- category End-->
 
     <!-- theme -->
+    <!-- TODO 1. class명 bem 방식으로 수정 -->
+    <!-- TODO 2. 전체 사이즈 재조정 (너무 크다고 생각 됨) -->
+    <!-- TODO 3. text 일정 길이 이상이면 ...으로 변하게 수정 -->
+    <!-- TODO 4. 하단 border 안 나오는 오류 수정 -->
     <section class="theme">
-      <!-- TODO theme title 영역 완성하기 -->
       <div class="theme__title-box">
         <h2 class="theme__title">Theme</h2>
         <a href="#" class="theme__link">더보기 &gt;</a>
       </div>
-      <!-- theme__title-box 영역 추가함 -->
-      <!-- 근데 container와 좌우로 위치하는 중 수정 필요-->
       <!-- 바로 위 섹션과의 간격 밑 title-box와 container와의 간격 조절 해야됨 -->
-      <!-- 콘텐츠 좌로 패딩 16으로 수정 필요 오른쪽은 필요 x-->
       <!-- profile-text-contents-area 영역 내 문장이 밑의 예약가능 부분과 겹쳐짐
       그래서 그에 따라 크기가 커지거나 문장의 길이 일정 수준 이상이면 ...으로 생략할 예정 -->
-      <!-- class명 bem 방식으로 수정 -->
       <div class="theme__container">
         <!-------------- theme module start -------------->
         <div class="theme-box-area">
@@ -134,6 +134,11 @@
                   을지로에서 즐기는 어쩌구 저쩌구 뭐 어쩌구
                   ㅁㅇㄴㄻㄴㅇㄻ
                   ㄴㅇㄹ
+                  ㅁㄴㅇㄻㄴㅇㄹ\어쩌구 저쩌구 믿거나 말거나
+                  을지로에서 즐기는 어쩌구 저쩌구 뭐 어쩌구
+                  ㅁㅇㄴㄻㄴㅇㄻ
+                  ㄴㅇㄹ
+                  ㅁㄴㅇㄻㄴㅇㄹ
                   ㅁㄴㅇㄻㄴㅇㄹ
                   ㅁㄴㅇㄻㄴㅇㄹ
                 </p>
@@ -201,6 +206,9 @@
 
 
     <!-- location -->
+    <!-- TODO 1. draggable image slider로 수정 -->
+    <!-- TODO 2. 이미지 어둡게 하고 그 위에 정보 나타내기 -->
+    <!-- TODO 3. 메인 색상 활용 -->
     <section class="location">
       <div class="location__title">
         <h1>location</h1>
@@ -246,9 +254,10 @@
     <!-- location End -->
 
     <!-- posting -->
+    <!-- TODO 1. Theme처럼 카드 좌측에 붙여놓을지 아니면 간격 둘지 결정하기 -->
     <section class="posting">
       <div class="posting__title-box">
-        <div class="posting__title">Best Posting</div>
+        <div class="posting__title">Posting</div>
         <a href="#" class="posting__link">더보기 ></a>
       </div>
       <div class="posting__container">
@@ -259,7 +268,7 @@
           <div class="posting__detail">
             <div class="posting__profile">
               <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
+                <img src="./images/profile-pic.jpg" alt="">
               </div>
               <p class="posting__user-name">
                 irones_ignore
@@ -272,13 +281,14 @@
               </p>
               <div class="posting__like">
                 <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
+                  <img class="posting__like off" src="./images/icon/icon-heart.svg" alt="">
                   <span class="posting__like-count">9996</span>
                 </div>
               </div>
             </div>
           </div>
         </a>
+        
         <a href="" class="posting__feed">
           <div class="posting__img">
             <img src="./images/index-city.jpg" alt="">
@@ -286,59 +296,7 @@
           <div class="posting__detail">
             <div class="posting__profile">
               <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
-              </div>
-              <p class="posting__user-name">
-                irones_ignore
-              </p>
-            </div>
-            <div class="posting__content">
-              <h3>ㅎㅎ</h3>
-              <p>냉무</p>
-              <div class="posting__like">
-                <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
-                  <span class="posting__like-count">9996</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="" class="posting__feed">
-          <div class="posting__img">
-            <img src="./images/index-city.jpg" alt="">
-          </div>
-          <div class="posting__detail">
-            <div class="posting__profile">
-              <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
-              </div>
-              <p class="posting__user-name">
-                엄준식 12세
-              </p>
-            </div>
-            <div class="posting__content">
-              <h3>이것은 제목입니다 ㅎㅎ</h3>
-              <p>
-                이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw
-              </p>
-              <div class="posting__like">
-                <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
-                  <span class="posting__like-count">9996</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="" class="posting__feed">
-          <div class="posting__img">
-            <img src="./images/index-city.jpg" alt="">
-          </div>
-          <div class="posting__detail">
-            <div class="posting__profile">
-              <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
+                <img src="./images/profile-pic.jpg" alt="">
               </div>
               <p class="posting__user-name">
                 irones_ignore
@@ -351,7 +309,91 @@
               </p>
               <div class="posting__like">
                 <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
+                  <img class="posting__like off" src="./images/icon/icon-heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다 ㅎㅎ</h3>
+              <p>이것은 내용입니다
+                ㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqdㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqd
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/icon-heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다 ㅎㅎ</h3>
+              <p>이것은 내용입니다
+                ㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqdㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqd
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/icon-heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다 ㅎㅎ</h3>
+              <p>이것은 내용입니다
+                ㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqdㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqd
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/icon-heart.svg" alt="">
                   <span class="posting__like-count">9996</span>
                 </div>
               </div>
@@ -362,41 +404,37 @@
     </section>
     <!-- posting End-->
 
-
-
-
-
     <!-- nav-bar -->
-    <section class="test">
+    <section>
       <nav class="navbar">
         <div class="navbar__list">
           <a href="#" type="button" class="navbar__btn">
             <div>
-              <img src="images/icon _home_.svg" alt="">
+              <img src="images/icon/icon-home.svg" alt="">
             </div>
             <div class="navbar__text">홈</div>
           </a>
           <a href="#" type="button" class="navbar__btn">
             <div>
-              <img src="images/icon _heart_.svg" alt="">
+              <img src="images/icon/icon-heart.svg" alt="">
             </div>
             <div class="navbar__text">찜목록</div>
           </a>
           <a href="#" type="button" class="navbar__btn">
             <div>
-              <img src="images/icon _pin alt_.svg" alt="">
+              <img src="images/icon/icon-location-pin.svg" alt="">
             </div>
             <div class="navbar__text">내위치</div>
           </a>
           <a href="#" type="button" class="navbar__btn">
             <div>
-              <img src="images/icon _message_.svg" alt="">
+              <img src="images/icon/icon-message.svg" alt="">
             </div>
             <div class="navbar__text">메시지</div>
           </a>
           <a href="#" type="button" class="navbar__btn">
             <div>
-              <img src="images/icon _user_.svg" alt="">
+              <img src="images/icon/icon-user.svg" alt="">
             </div>
             <div class="navbar__text">내정보</div>
           </a>
@@ -404,9 +442,7 @@
       </nav>
     </section>
     <!-- nav-bar End-->
-
   </main>
-
 
   <!-- footer -->
   <footer class="footer">
