@@ -175,6 +175,20 @@ body>header {
     color: #717171;
 }
 
+.theme__icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.theme__icons .share {
+    height: 18px;
+}
+
+.theme__icons .heart {
+    height: 14px;
+}
+
 /* .theme__icons {
     font-size: 0;
     display: flex;
