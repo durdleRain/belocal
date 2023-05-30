@@ -34,10 +34,10 @@
     padding: 0 0 0 10px;
 
 }
+
 .posting__container::-webkit-scrollbar{
     display: none;
 }
-
 
 .posting__feed{
     display: flex;
@@ -59,7 +59,6 @@
     height: 100%;
 }
 
-
 /* post 유저 이미지 부분 */
 .posting__profile{
     display: flex;
@@ -68,8 +67,6 @@
     align-items: center;
     width: 68px;
     height: 90px;
-
-    
 }
 
 .posting__profile-img{
@@ -119,7 +116,6 @@
     height: 32px;
     color: var(--color-text-black);
 }
-
 
 .posting__detail{
     display: flex;
