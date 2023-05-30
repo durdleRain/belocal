@@ -95,10 +95,6 @@ a {
     color: var(--color-text-black);
 }
 
-/* body {
-    width: 100vw;
-    height: 100vh;
-} */
 
 
 input,
@@ -112,9 +108,14 @@ button {
 }
 
 
-img {
-    width: 100%;
+/* body {
+    width: 100vw;
+    height: 100vh;
 } */
+
+/* img {
+    width: 100%;
+}  */
 
 /* main {
     width: 100%;

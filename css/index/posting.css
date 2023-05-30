@@ -28,6 +28,7 @@
 .posting__container{
     display: flex;
     width: 100%;
+    height: 414px;
     overflow-x: scroll;
     overflow-y: hidden;
     gap: 12px;
@@ -42,7 +43,7 @@
 .posting__feed{
     display: flex;
     flex-direction: column;
-    /* width: 246px; */
+    max-width: 246px;
     height: 414px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -51,11 +52,13 @@
 }
 
 .posting__img{
+    width: 100%;
     /* width: 246px; */
-    height: 308px;
+    height: 70%;
 }
 .posting__img img{
     border-radius: 12px 12px 0 0;
+    width: 100%;
     height: 100%;
 }
 
@@ -90,17 +93,20 @@
 .posting__content{
     display: flex;
     flex-direction: column;
-    width: 140px;
+    width: 100%;
+    height: 100%;
     /* justify-content: space-between; */
     /* width: 150px; */
     /* margin: 0 12px; */
 }
 
 .posting__content h3{
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     margin: 0;
     width: 100%;
-    /* width: 140px; */
+    /* width: 146px; */
     height: 20px;
     color: var(--color-text-black);
     font-weight: var(--font-weight-regular);
@@ -123,8 +129,8 @@
 
 .posting__detail{
     display: flex;
-    width: 246px;
-    height: 106px;
+    width: 100%;
+    height: 150px;
     padding: 12px;
     gap: 12px;
 }
@@ -136,12 +142,13 @@
 /* post 좋아요 부분 */
 
 .posting__like{
-    /* width: 16px; */
     display: flex;
+    width: 100%;
     height: 14px;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 100%;
+    z-index: 2;
+    cursor:crosshair;
 }
 
 .posting__like-btn{
