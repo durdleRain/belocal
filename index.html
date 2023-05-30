@@ -6,8 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/index/header.css">
+  <link rel="stylesheet" href="./css/index/category.css">
+  <link rel="stylesheet" href="./css/index/location.css">
   <link rel="stylesheet" href="./css/index/theme.css">
-  <script src="./js/location.js" defer></script>
+  <link rel="stylesheet" href="./css/index/posting.css">
+  <link rel="stylesheet" href="./css/index/footer.css">
+  <script src="./js/index/location.js" defer></script>
   <title>BeLocal Main</title>
   <style>
     main>p {
@@ -21,20 +27,20 @@
 </head>
 
 <body>
+  <!-- TODO 1. 이미지 소스 정상적으로 수정 -->
   <!-- header -->
   <header>
     <div class="header__wrap">
       <div class="header__img">
-        <img src="./images/main-city.jpg" alt="">
+        <img src="./images/index-city.jpg" alt="">
       </div>
 
       <div class="header__search">
-        <img class="header__search-icon" src="./images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <img class="header__search-icon" src="./images/icon/search.svg" alt="">
         <button class="header__search-bar" type="button"><span>검색해보셈 ㅋ</span></button>
       </div>
     </div>
   </header>
-
 
   <main>
     <!-- category -->
@@ -46,74 +52,74 @@
       <div class="category__items-box">
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
         <a href="#" class="category__item">
           <div class="category__img">
-            <img src="./images/1163795.svg" alt="">
+            <img src="./images/icon/category.svg" alt="">
           </div>
-          <p class="category__text">카테고리이름</p>
+          <span class="category__text">카테고리이름</span>
         </a>
       </div>
     </section>
     <!-- category End-->
 
     <!-- theme -->
+    <!-- TODO 1. class명 bem 방식으로 수정 -->
+    <!-- TODO 2. 전체 사이즈 재조정 (너무 크다고 생각 됨) -->
+    <!-- TODO 3. text 일정 길이 이상이면 ...으로 변하게 수정 -->
+    <!-- TODO 4. 하단 border 안 나오는 오류 수정 -->
     <section class="theme">
-      <!-- <div class="theme__title-box">
+      <div class="theme__title-box">
         <h2 class="theme__title">Theme</h2>
         <a href="#" class="theme__link">더보기 &gt;</a>
-      </div> -->
-      <!-- theme__title-box 영역 추가함 -->
-      <!-- 근데 container와 좌우로 위치하는 중 수정 필요-->
+      </div>
       <!-- 바로 위 섹션과의 간격 밑 title-box와 container와의 간격 조절 해야됨 -->
-      <!-- 콘텐츠 좌로 패딩 16으로 수정 필요 오른쪽은 필요 x-->
       <!-- profile-text-contents-area 영역 내 문장이 밑의 예약가능 부분과 겹쳐짐
       그래서 그에 따라 크기가 커지거나 문장의 길이 일정 수준 이상이면 ...으로 생략할 예정 -->
-      <!-- class명 bem 방식으로 수정 -->
       <div class="theme__container">
         <!-------------- theme module start -------------->
         <div class="theme-box-area">
           <div class="theme-box-pic-area">
-            <img src="/images/theme-sample.png" alt="">
+            <img src="/images/index-city.jpg" alt="">
           </div><!--theme-box-pic-area-->
 
           <div class="profile-outter-box">
@@ -132,13 +138,25 @@
               </div><!--profile-text-title-area-->
 
               <div class="profile-text-contents-area">
-                <p>을지로에서 즐기는 어쩌구 저쩌구을지로asdsadasdsadsadadas구 저쩌어쩌구 저쩌구을지로에서 즐기는 어쩌구 저쩌에서 즐기는 어쩌구 저쩌구을지로에서 즐기는 어쩌구 저쩌어쩌구 저쩌구을지로에서 즐기는 어쩌구 저쩌</p>
+                <p>을지로에서 즐기는 어쩌구 저쩌구 뭐 어쩌구 저쩌구
+                  어쩌구 어쩌구 저쩌구 믿거나 말거나
+                  을지로에서 즐기는 어쩌구 저쩌구 뭐 어쩌구
+                  ㅁㅇㄴㄻㄴㅇㄻ
+                  ㄴㅇㄹ
+                  ㅁㄴㅇㄻㄴㅇㄹ\어쩌구 저쩌구 믿거나 말거나
+                  을지로에서 즐기는 어쩌구 저쩌구 뭐 어쩌구
+                  ㅁㅇㄴㄻㄴㅇㄻ
+                  ㄴㅇㄹ
+                  ㅁㄴㅇㄻㄴㅇㄹ
+                  ㅁㄴㅇㄻㄴㅇㄹ
+                  ㅁㄴㅇㄻㄴㅇㄹ
+                </p>
               </div><!--profile-text-contents-area-->
 
 
               <div class="profile-status-area">
                 <div class="status-icon">
-                  <img src="./images/icon/icon-reservation-ok.svg" alt="">
+                  <img src="/images/icon/reservation-ok.svg" alt="">
                 </div><!--status-icon-->
 
                 <div class="status-text">예약가능</div>
@@ -156,7 +174,7 @@
          <!-------------- theme module start -------------->
          <div class="theme-box-area">
           <div class="theme-box-pic-area">
-            <img src="/images/theme-sample.png" alt="">
+            <img src="/images/index-city.jpg" alt="">
           </div><!--theme-box-pic-area-->
 
           <div class="profile-outter-box">
@@ -181,7 +199,7 @@
 
               <div class="profile-status-area">
                 <div class="status-icon">
-                  <img src="./images/icon/icon-reservation-ok.svg" alt="">
+                  <img src="/images/icon/reservation-ok.svg" alt="">
                 </div><!--status-icon-->
 
                 <div class="status-text">예약가능</div>
@@ -239,91 +257,72 @@
 
 
     <!-- location -->
-    <section id="location">
-      <div class="section-title">
+    <!-- TODO 1. draggable image slider로 수정 -->
+    <!-- TODO 2. 이미지 어둡게 하고 그 위에 정보 나타내기 -->
+    <!-- TODO 3. 메인 색상 활용 -->
+    <section class="location">
+      <div class="location__title">
         <h1>location</h1>
         <a href="">더보기></a>
       </div>
 
-      <div class="location-image">
-        <input type="radio" name="slide" id="slide01" checked>
-        <input type="radio" name="slide" id="slide02">
-        <input type="radio" name="slide" id="slide03">
-        <input type="radio" name="slide" id="slide04">
-        <input type="radio" name="slide" id="slide05">
+      <div class="location__slider">
+        <div class="location__images">
+          <div class="location__image">
+            <img src="./images/location01.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location02.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location03.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location04.jpg" alt="">
+          </div>
+          <div class="location__image">
+            <img src="./images/location05.jpg" alt="">
+          </div>
+        </div>
 
-        <div class="slide-wrap">
-          <ul class="slide-list">
-            <li>
-              <a>
-                <img src="./images/location01.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location02.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location03.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location04.jpg">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="./images/location05.jpg">
-              </a>
-            </li>
-
-            <div class="slide-control">
-              <div class="control01">
-                <label for="slide05" class="left"></label>
-                <label for="slide02" class="right"></label>
-              </div>
-              <div class="control02">
-                <label for="slide01" class="left"></label>
-                <label for="slide03" class="right"></label>
-              </div>
-              <div class="control03">
-                <label for="slide02" class="left"></label>
-                <label for="slide04" class="right"></label>
-              </div>
-              <div class="control04">
-                <label for="slide03" class="left"></label>
-                <label for="slide05" class="right"></label>
-              </div>
-              <div class="control05">
-                <label for="slide04" class="left"></label>
-                <label for="slide01" class="right"></label>
-              </div>
-            </div>
-          </ul>
+        <div class="location__nav-buttons">
+          <div class="location__prev-button">
+            <img src="./images/icon/left-arrow.svg">
+          </div>
+          <div class="location__next-button">
+            <img src="./images/icon/right-arrow.svg">
+          </div>
+        </div>
+        <div class="location__nav-dots">
+          <span class="location__dot active"></span>
+          <span class="location__dot"></span>
+          <span class="location__dot"></span>
+          <span class="location__dot"></span>
+          <span class="location__dot"></span>
         </div>
       </div>
-
     </section>
     <!-- location End -->
 
     <!-- posting -->
+    <!-- TODO 1. Theme처럼 카드 좌측에 붙여놓을지 아니면 간격 둘지 결정하기 -->
     <section class="posting">
+      <!-- posting 제목 영역 -->
       <div class="posting__title-box">
-        <div class="posting__title">Best Posting</div>
+        <div class="posting__title">Posting</div>
         <a href="#" class="posting__link">더보기 ></a>
       </div>
+
+      <!-- 글 영역 -->
       <div class="posting__container">
         <a href="" class="posting__feed">
           <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
+            <img src="./images/index-city.jpg" alt="">
           </div>
           <div class="posting__detail">
             <div class="posting__profile">
               <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
+                <img src="./images/profile-pic.jpg" alt="">
               </div>
               <p class="posting__user-name">
                 irones_ignore
@@ -332,90 +331,12 @@
             <div class="posting__content">
               <h3>이것은 제목입니다 ㅎㅎ</h3>
               <p>이것은 내용입니다
-                ㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqdㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqd
+                Sit sanctus erat lorem erat voluptua ea dolore at rebum. Sadipscing no vero nonumy eirmod voluptua sed
+                nonumy sadipscing amet..
               </p>
               <div class="posting__like">
                 <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
-                  <span class="posting__like-count">9996</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="" class="posting__feed">
-          <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
-          </div>
-          <div class="posting__detail">
-            <div class="posting__profile">
-              <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
-              </div>
-              <p class="posting__user-name">
-                irones_ignore
-              </p>
-            </div>
-            <div class="posting__content">
-              <h3>ㅎㅎ</h3>
-              <p>냉무</p>
-              <div class="posting__like">
-                <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
-                  <span class="posting__like-count">9996</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="" class="posting__feed">
-          <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
-          </div>
-          <div class="posting__detail">
-            <div class="posting__profile">
-              <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
-              </div>
-              <p class="posting__user-name">
-                엄준식 12세
-              </p>
-            </div>
-            <div class="posting__content">
-              <h3>이것은 제목입니다 ㅎㅎ</h3>
-              <p>
-                이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw이것은sadasdqawdqw
-              </p>
-              <div class="posting__like">
-                <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
-                  <span class="posting__like-count">9996</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="" class="posting__feed">
-          <div class="posting__img">
-            <img src="./images/main-city.jpg" alt="">
-          </div>
-          <div class="posting__detail">
-            <div class="posting__profile">
-              <div class="posting__profile-img">
-                <img src="./images/profile.jpg" alt="">
-              </div>
-              <p class="posting__user-name">
-                irones_ignore
-              </p>
-            </div>
-            <div class="posting__content">
-              <h3>이것은 제목입니다 ㅎㅎ</h3>
-              <p>이것은 내용입니다
-                ㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅇㅈㅂㅇㅈㅂㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅂㅈㅇㅈㅂㅇㅈㅇㅇㅈㅂㅇㅂㅇㅂㅈㅂㅈㅇㅂㅈㅇㅈㅂㅇㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqdㅂㅇㅂㅈㅂㅇㅂㅈㅇㅂㅈdwqdwqdqwdqwdqwdqdwqwdqwdqdqwqwdwqwqd
-              </p>
-              <div class="posting__like">
-                <div class="posting__like-btn" type="button">
-                  <img class="posting__like off" src="./images/icon _heart_.svg" alt="">
+                  <img class="posting__like off" src="./images/icon/heart.svg" alt="">
                   <span class="posting__like-count">9996</span>
                 </div>
               </div>
@@ -423,63 +344,127 @@
           </div>
         </a>
 
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다ㅋㅋㅋ</h3>
+              <p>이것은 내용입니다
+                Sit sanctus erat lorem erat voluptua ea dolore at rebum. Sadipscing no vero nonumy eirmod voluptua sedLorem nonumy amet gubergren clita duo at sea. Ut rebum no duo sed est et sadipscing et. Erat tempor labore.
+                nonumy sadipscing amet
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다ㅋㅋㅋ</h3>
+              <p>이것은 내용입니다
+                Sit sanctus erat lorem erat voluptua ea dolore at rebum. Sadipscing no vero nonumy eirmod voluptua sedLorem nonumy amet gubergren clita duo at sea. Ut rebum no duo sed est et sadipscing et. Erat tempor labore.
+                nonumy sadipscing amet
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다ㅋㅋㅋ</h3>
+              <p>이것은 내용입니다
+                Sit sanctus erat lorem erat voluptua ea dolore at rebum. Sadipscing no vero nonumy eirmod voluptua sedLorem nonumy amet gubergren clita duo at sea. Ut rebum no duo sed est et sadipscing et. Erat tempor labore.
+                nonumy sadipscing amet
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="" class="posting__feed">
+          <div class="posting__img">
+            <img src="./images/index-city.jpg" alt="">
+          </div>
+          <div class="posting__detail">
+            <div class="posting__profile">
+              <div class="posting__profile-img">
+                <img src="./images/profile-pic.jpg" alt="">
+              </div>
+              <p class="posting__user-name">
+                irones_ignore
+              </p>
+            </div>
+            <div class="posting__content">
+              <h3>이것은 제목입니다ㅋㅋㅋ</h3>
+              <p>이것은 내용입니다
+                Sit sanctus erat lorem erat voluptua ea dolore at rebum. Sadipscing no vero nonumy eirmod voluptua sedLorem nonumy amet gubergren clita duo at sea. Ut rebum no duo sed est et sadipscing et. Erat tempor labore.
+                nonumy sadipscing amet
+              </p>
+              <div class="posting__like">
+                <div class="posting__like-btn" type="button">
+                  <img class="posting__like off" src="./images/icon/heart.svg" alt="">
+                  <span class="posting__like-count">9996</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
 
 
       </div>
-
     </section>
     <!-- posting End-->
-
-
-
-
-
-    <!-- nav-bar -->
-    <section class="test">
-      <nav class="navbar">
-        <div class="navbar__list">
-          <a href="#" type="button" class="navbar__btn">
-            <div>
-              <img src="images/icon _home_.svg" alt="">
-            </div>
-            <div class="navbar__text">홈</div>
-          </a>
-          <a href="#" type="button" class="navbar__btn">
-            <div>
-              <img src="images/icon _heart_.svg" alt="">
-            </div>
-            <div class="navbar__text">찜목록</div>
-          </a>
-          <a href="#" type="button" class="navbar__btn">
-            <div>
-              <img src="images/icon _pin alt_.svg" alt="">
-            </div>
-            <div class="navbar__text">내위치</div>
-          </a>
-          <a href="#" type="button" class="navbar__btn">
-            <div>
-              <img src="images/icon _message_.svg" alt="">
-            </div>
-            <div class="navbar__text">메시지</div>
-          </a>
-          <a href="#" type="button" class="navbar__btn">
-            <div>
-              <img src="images/icon _user_.svg" alt="">
-            </div>
-            <div class="navbar__text">내정보</div>
-          </a>
-        </div>
-      </nav>
-    </section>
-    <!-- nav-bar End-->
-
-
-    <p>존나길게막써존나길게막써존나길게막써존나길게막써존나길게막써존나길게막써존나길게막써존나길게막써존나길게막써
-      써존나길게막써존나길게막써존나길게막써존나길게막써써존나길게막써존나길게막써존나길게막써존나길게막써써존나길게막써존나길게막써존나길게막써존나길게막써
-      써존나길게막써존나길게막써존나길게막써존나길게막써써존나길게막써존나길게막써존나길게막써존나길게막써써존나길게막써존나길게막써존나길게막써존나길게막써
-    </p>
   </main>
-
 
   <!-- footer -->
   <footer class="footer">
@@ -533,7 +518,44 @@
   </footer>
   <!-- footer End-->
 
-
+  <!-- nav-bar -->
+  <section>
+    <nav class="navbar">
+      <div class="navbar__list">
+        <a href="#" type="button" class="navbar__btn">
+          <div>
+            <img src="./images/icon/home.svg" alt="">
+          </div>
+          <div class="navbar__text">홈</div>
+        </a>
+        <a href="./wishlists.html" type="button" class="navbar__btn">
+          <div>
+            <img src="./images/icon/heart.svg" alt="">
+          </div>
+          <div class="navbar__text">찜목록</div>
+        </a>
+        <a href="./mylocation.html" type="button" class="navbar__btn">
+          <div>
+            <img src="./images/icon/location-pin.svg" alt="">
+          </div>
+          <div class="navbar__text">내위치</div>
+        </a>
+        <a href="./chat/chatlist.html" type="button" class="navbar__btn">
+          <div>
+            <img src="./images/icon/message.svg" alt="">
+          </div>
+          <div class="navbar__text">메시지</div>
+        </a>
+        <a href="./mypage.html" type="button" class="navbar__btn">
+          <div>
+            <img src="./images/icon/user.svg" alt="">
+          </div>
+          <div class="navbar__text">내정보</div>
+        </a>
+      </div>
+    </nav>
+  </section>
+  <!-- nav-bar End-->
 </body>
 
 </html>

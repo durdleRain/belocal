@@ -4,7 +4,6 @@
     width: 100%;
     height: 456px;
     margin-bottom: var(--section-margin-bottom);
-    padding: 0 0 0 16px;
 }
 
 .posting__title-box{
@@ -12,9 +11,8 @@
     height: 22px;
     justify-content: space-between;
     align-items: flex-end;
-    padding: var(--section-padding);
     margin-bottom: var(--title-contents-gap);
-
+    padding: var(--section-padding);
 }
 
 .posting__title{
@@ -32,13 +30,14 @@
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
-    gap: 6px;
+    gap: 12px;
+    padding: 0 0 0 10px;
 
 }
+
 .posting__container::-webkit-scrollbar{
     display: none;
 }
-
 
 .posting__feed{
     display: flex;
@@ -48,7 +47,7 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     /* margin: 20px 12px; */
-    margin: 4px 12px 12px 12px;
+    /* margin: 4px 12px 12px 0; */
 }
 
 .posting__img{
@@ -60,7 +59,6 @@
     height: 100%;
 }
 
-
 /* post 유저 이미지 부분 */
 .posting__profile{
     display: flex;
@@ -69,8 +67,6 @@
     align-items: center;
     width: 68px;
     height: 90px;
-
-    
 }
 
 .posting__profile-img{
@@ -120,7 +116,6 @@
     height: 32px;
     color: var(--color-text-black);
 }
-
 
 .posting__detail{
     display: flex;
