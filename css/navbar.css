@@ -45,3 +45,8 @@
     font-size: var(--font-size-small10);
     color: var(--color-text-gray);
 }
+
+/* 페이지 최하단에서 콘텐츠를 가리지 않게 하기 위해 main의 하단에 navbar size만큼의 margin 추가 */
+body {
+    margin-bottom: 62px;
+}
