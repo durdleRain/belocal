@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/css/search-result.css">
     <title>search-result</title>
 </head>
@@ -18,11 +17,11 @@
                     <div class="search__bar">
                         <div class="search__bar--container">
                             <!-- <div class="search__bar" type="button"> -->
-                                <img class="search-icon" src="/images/icon/icon-search.svg" alt="" type="button">                    
+                                <img class="search-icon" src="/images/header-search-icon.svg" alt="" type="button">                    
                                 <input type="text" id="search__input" placeholder="망원동 카페, 을지로 노포"/>
                                 <!-- <p>망원동 카페, 을지로 노포</p> -->
                                 <button id="search__reset">
-                                    <img class="search__reset--x" src="/images/icon/icon-x.svg" alt="">
+                                    <img class="search__reset--x" src="/images/search__reset--icon.svg" alt="">
                                 </button>
                                 <div class="modal__exit">
                                     <div id="exit">취소</div>
@@ -38,76 +37,25 @@
                             <div class="search__keywords">
                                 <hr class="hr-solid">
 
-
-<!--==================== 추천키워드 ==============================-->
                                 <div class="search__keywords--recommand">
                                     <div class="search__keywords--title">
-                                        <p>추천 검색어</p>  
+                                    <p>추천 검색어</p>
                                     </div><!--search__keywords--title-->
                                     
-
-
                                         <div class="search__keywords--line1">
-                                                <div class="box">
-                                                    <p>을지로노포</p>
-                                                </div><!--box1-->
-                                                <div class="box">
-                                                    <p>을지로노포</p>
-                                                </div><!--box2-->
-                                                <div class="box">
-                                                    <p>을지로노포</p>
-                                                </div><!--box3-->
-                                                <div class="box">
-                                                    <p>을지로노포</p>
-                                                </div><!--box4-->
+                                            <ipnut type="button" class="search__keywords--box1" value="을지로노포">
+                                            </button>
                                         </div><!--search__keywords--line1-->
-
-
                                         <div class="search__keywords--line2">
-                                            <div class="box">
-                                                <p>을지로노포</p>
-                                            </div><!--box1-->
-                                            <div class="box">
-                                                <p>을지로노포</p>
-                                            </div><!--box2-->
-                                            <div class="box">
-                                                <p>을지로노포</p>
-                                            </div><!--box3-->
-                                            <div class="box">
-                                                <p>을지로노포</p>
-                                            </div><!--box4-->
+
                                         </div><!--search__keywords--line2-->
+
+
                                 </div><!--search__keywords--recommand-->
-
-<!--==================== 인기 검색어 ==============================-->
-                                    <div class="hot__keywords--title">
-                                        <p>인기 검색어</p>
-                                        <p>05.23 18:00 기준</p>
-                                    </div><!--hot__keywords--title-->
-
-                                    <div class="hot__keywords--lists">
-                                        <div class="hot__keywords--column1">
-                                            <p>1 을지로 노포</p>
-                                            <p>2 종로 뒷골목</p>
-                                            <p>3 성수 와인바</p>
-                                            <p>4 성수 와인바</p>
-                                            <p>5 성수 와인바</p>
-                                        </div><!--hot__keywords--column1-->
-
-                                        <div class="hot__keywords--column2">
-                                            <p>6 을지로 노포</p>
-                                            <p>7 종로 뒷골목</p>
-                                            <p>8 성수 와인바</p>
-                                            <p>9 성수 와인바</p>
-                                            <p>10 성수 와인바</p>
-                                        </div><!--hot__keywords--column1-->
-                                    </div><!--hot__keywords--lists-->
+                            
 
 
-
-
-
-                            </div><!--search__keywords-->
+                            </div><!--search__recommands-->
                         </main>
 
             </div><!--search__modal--content-->

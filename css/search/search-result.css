@@ -54,11 +54,10 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     position: absolute;
-    width: 20px;
+    width: 30px;
     height: auto;
     margin-left: -280px;
-    filter: invert(68%) sepia(1%) saturate(3%) hue-rotate(4deg) brightness(83%) contrast(87%);}
-
+}
 #search__input {
     display: flex;
     flex-direction: row;
@@ -87,11 +86,10 @@ body {
     justify-content: center;
     position: absolute;
     margin-left: 220px;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: none;
-    background-color: #D1D1D1;
 }
 
 .modal__exit {
@@ -102,7 +100,7 @@ body {
     width: 60px;
     height: 20px;
     /* background-color: lightpink; */
-    /* font-family: 'Noto Sans', ; */
+    font-family: 'Noto Sans', ;
 }
 #exit {
     display: flex;
@@ -114,9 +112,7 @@ body {
     background-color: white;
     /* margin-right: 16px; */
     font-family: 'Noto Sans', sans-serif;
-    color : var(--color-text-gray2);
-    font-size: var(--font-size-medium12);
-
+    color: #D1D1D1;
 }
 
 
@@ -124,8 +120,6 @@ body {
 
 /*======== main ===========*/
 .search__keywords {
-    display: flex;
-    flex-direction: column;
     width: 390px;
     height: 1200px;
     background-color: white;
@@ -139,34 +133,25 @@ body {
 .search__keywords--recommand {
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
     width: 390px;
-    height: 126px;
-    gap: 2px;
-    margin-bottom: var(--section-margin-bottom);
-    font-family: 'Noto Sans', sans-serif;
-    /* font-weight: var(--font-weight-bold); */
-
+    height: 140px;
+    background-color: bisque;
+    gap: 8px;
 }
 .search__keywords--title {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
     width: 390px;
     height: 40px;
-    /* background-color: red; */
-    padding: var(--section-padding);
+    background-color: red;
 }
-.search__keywords--title :first-child {
+.search__keywords--recommand p {
     font-size: 14px;
     font-family: 'Noto Sans', sans-serif;
     color: #8D8D8D;
-    /* padding: var(--section-padding); */
-    /* margin-left: 16px; */
-    font-weight: var(--font-weight-bold);
+    margin-left: 16px;
 }
-
-/*------ keyword box들 ----------*/
 .search__keywords--line1 {
     display: flex;
     flex-direction: row;
@@ -175,115 +160,14 @@ body {
     gap: 10px;
     width: 390px;
     height: 40px;
-    /* background-color: aquamarine; */
-    padding: var(--section-padding);
-    /* font-family: 'Noto Sans', sans-serif; */
-    font-size: var(--font-size-medium12);
-    font-weight: var(--font-weight-regular);
+    background-color: aquamarine;
 }
-
-
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+.search__keywords--box1 {
     width: 80px;
-    height: 32px;
-    background-color: white;
-    border-radius: 14px;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);;
-
+    height: 30px;
 }
-.box p {
-    color: var(--color-text-gray);
-}
-
-
-
 .search__keywords--line2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-    gap: 10px;
     width: 390px;
     height: 40px;
-    /* background-color:aqua; */
-    padding: var(--section-padding) ;
-
-}
-
-/**============ 인기 검색어 ==============**/
-/* .hot__keywords {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    width: 390px;
-    height: 190px;
-    background-color: blue;
-} */
-.hot__keywords--title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 390px;
-    height: 40px;
-    /* background-color: green; */
-    padding: var(--section-padding);
-
-}
-.hot__keywords--title :first-child {
-    font-size: 14px;
-    font-family: 'Noto Sans', sans-serif;
-    color: #8D8D8D;
-    font-weight: var(--font-weight-bold);
-
-    /* padding: var(--section-padding); */
-}
-.hot__keywords--title :nth-child(2) {
-    font-size: 10px;
-    font-family: 'Noto Sans', sans-serif;
-    color: #8D8D8D;
-    /* padding: var(--section-padding); */
-}
-
-.hot__keywords--lists {
-    display: flex;
-    justify-content: flex-start;
-    /* justify-content: space-around; */
-    width: 390px;
-    height: 150px;
-    /* background-color: aqua; */
-    padding: var(--section-padding);
-    gap: 70px;
-}
-
-.hot__keywords--lists p {
-    font-size: var(--font-size-medium12);
-    font-family: var(--font-family-kr);
-    color: var(--color-text-gray1);
-
-}
-
-
-
-.hot__keywords--column1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100px;
-    height: 150px;
-    /* background-color: rebeccapurple; */
-}
-.hot__keywords--column2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100px;
-    height: 150px;
-    /* background-color: red; */
+    background-color:aqua;
 }
