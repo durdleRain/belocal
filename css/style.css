@@ -43,6 +43,7 @@
 
     /*Font Weight*/
     --font-weight-bold: 800;
+    --font-weight-semibold: 600;
     --font-weight-regular: 400;
     --font-weight-light: 200;
 
@@ -94,13 +95,10 @@ a {
     color: var(--color-text-black);
 }
 
-/* body {
-    width: 100vw;
-    height: 100vh;
-} */
 
 input,
 button {
+    outline: none;
 	border:none;
 }
 
@@ -108,9 +106,15 @@ button {
     background-color: var(--color-point-white);
 }
 
+
+/* body {
+    width: 100vw;
+    height: 100vh;
+} */
+
 /* img {
     width: 100%;
-} */
+}  */
 
 /* main {
     width: 100%;

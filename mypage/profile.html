@@ -1,262 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/mypage.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <title>myprofile-user</title>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-  </style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/my-page/profile.css">
+    <title>Document</title>
 </head>
-
 <body>
-  <header>
-    <!-- <div class="all"> -->
-    <div class="header">
-      <div class="profile-outter">
-        <div class="profile-pic">
-          <img src="/images/profile-pic.jpg" alt="">
-        </div> <!--profile-pic-->
-
-
-
-        <div class="text">
-          <div class="user-info">
-            <div class="id">
-              <p>innerjoin</p>
-            </div><!--id-->
-
-
-            <div class="local-icon">
-              <div class="material-symbols-outlined">hotel_class</div>
-              <div class="local">
-                <p>local</p>
-              </div><!--local-->
-
-            </div><!--local-icon-->
-          </div><!--user-info-->
-
-
-          <div class="email">
-            <p>email@gmail.com</p>
-          </div><!--email-->
-
-
-
-          <div class="buttons">
-            <div class="profile-edit">
-              <div type="button">프로필수정</div>
-            </div><!--profile-edit-->
-
-            <div class="myprofile">
-              <div type="myprofile">myprofile</div>
-            </div><!--myprofile-->
-          </div><!--buttons-->
-
-
-        </div><!--text-->
-      </div><!--profile-outter-->
-    </div> <!--header-->
-  </header>
-
-
-  <div class="mode-change">
-    <!-- <div class="reg-theme-button" type="button">
-                    theme 등록하러 가기</div> -->
-
-    <div class="belocal-button" type="button">
-      <img src="/images/belocal-logo.png" alt="">
-      <p class="belocal-en">Be Local !</p>
-      <p class="belocal-kr">로컬이 되어보세요</p>
-    </div>
-  </div> <!--mode-change-->
-
-
-
-
-  <div class="status-buttons">
-    <div class="stat-count">
-      <div class="stat-button">요청</div><!--request-button-->
-      <div class="count">20</div>
-    </div><!--stat-count-->
-
-    <div class="stat-count">
-      <div class="stat-button">승인</div><!--request-button-->
-      <div class="count">90</div>
-    </div><!--stat-count-->
-
-    <div class="stat-count">
-      <div class="stat-button">예약</div><!--request-button-->
-      <div class="count">110</div>
-    </div><!--stat-count-->
-
-    <div class="stat-count">
-      <div class="stat-button">완료</div><!--request-button-->
-      <div class="count">2</div>
-    </div><!--stat-count-->
-  </div><!--status-buttons-->
-
-
-
-  <div class="whishlist">
-    <div class="whishlist-button" type="button">
-      위시리스트
-    </div><!--change-to-travelr-->
-    <div class="count">20</div>
-  </div> <!--wishlist-->
-
-
-  <div class="open-menu">
-    <div class="drag-bar"></div>
-
-    <div class="open-menu-boxes">
-      <div class="open-menu-request-box">
-        <div class="open-menu-request-box-contents">
-          <div class="open-menu-profile-area">
-            <div class="open-menu-profile-pic">
-              <img src="/images/profile-pic.jpg" alt="">
+    <header class="my-page-header">
+        <!-- 유저 이미지 -->
+        <div class="my__profile-img">
+            <img src="../images/profile-pic.jpg" alt="">
+        </div>
+        <!-- 유저 정보 내용 -->
+        <div class="my__profile-content">
+            <!-- 유저  정보 영역 -->
+            <div class="my__info-wrap">
+                <div class="my__info">
+                    <!-- 유저 이름 -->
+                    <div class="my__name">
+                        <span>userName001</span>
+                    </div>
+                    <!-- 로컬 유무 -->
+                    <div class="my__local">
+                        <img src="../images/logo-beLocal.svg" alt="">
+                        <span>local</span>
+                    </div>
+                </div>
+                <!-- 유저메일 -->
+                <div class="my__mail">
+                    <span>test@gmail.com</span>
+                </div>
             </div>
-            <div class="open-menu-profile-id">
-              innerjoin
+            <!-- 프로필 수정 및 내 게시물 -->
+            <div class="my__link">
+                <div class="my__link-btn">
+                    <a href="#">프로필 수정</a>
+                </div>
+                <div class="my__link-btn">
+                    <a href="#">내 게시물</a>
+                </div>
             </div>
-          </div><!--open-menu-profile-area-->
-
-          <div class="open-menu-text-area">
-            <div>
-              <p class="open-menu-title">
-                "을지로 노포 투어 가이드"
-              </p>
-              <p class="open-menu-contents">
-                을지로의 숨은 맛집을 찾아서 골목 골목<br>
-                사이사이 함께 모험해봐요. 골목 골목<br>
-                사이사이사이 사이 사이 사이 다니자
-              </p>
+            <!-- 게시글 등록 숫자 -->
+            <div class="my__post-tab">
+                <ul class="my__tab-list">
+                    <li class="my__tab-item">
+                        <a class="my__tab-link" href="#">
+                            <span class="my__tab-count">1</span>
+                            <span class="my__tab-menu">themes</span>
+                        </a>
+                    </li>
+                    <li class="my__tab-item">
+                        <a class="my__tab-link" href="#">
+                            <span class="my__tab-count">0</span>
+                            <span class="my__tab-menu">post</span>
+                        </a>
+                    </li>
+                    <li class="my__tab-item">
+                        <a class="my__tab-link" href="#">
+                            <span class="my__tab-count">1</span>
+                            <span class="my__tab-menu">followers</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="reservation-status">
-              <img class="reservation-not-icon" src="/images/reservation-not-icon.svg">
-              <div class="reservation-not-text">예약중</div>
-            </div><!--reservation-status-->
-          </div><!--open-menu-text-area-->
-        </div><!--open-menu-request-box-contents-->
-      </div><!--open-menu-request-box-->
+        </div>
+    </header>
+    <main class="my-page-main">
+
+        <div class="my__register-btn ">
+            <a href="#">theme 등록하러가기</a>
+        </div>
+
+        <div class="my__register-btn ">
+            <a href="#">Post 등록하러가기</a>
+        </div>
+
+        <div class="my__register-btn active">
+            <a href="#">
+                <img src="./images/logo-beLocal.svg" alt="">
+                <h2>Be Local !</h2>
+                <span>로컬이 되어보세요</span>
+            </a>
+        </div>
 
 
-      <div class="open-menu-request-box">
-        <div class="open-menu-request-box-contents">
-          <div class="open-menu-profile-area">
-            <div class="open-menu-profile-pic">
-              <img src="/images/profile-pic.jpg" alt="">
+        <!-- 요청,예약,완료 버튼 -->
+        <div class="my__deal-tap">
+            <ul class="my__deal-list">
+                <li class="my__deal-item">
+                    <button type="button">
+                        <h3>요청</h3>
+                        <span>20</span>
+                        <img src="../images/icon/right-arrow.svg" alt="">
+                    </button>
+                </li>
+                <li class="my__deal-item">
+                    <button type="button">
+                        <h3>예약</h3>
+                        <span>1</span>
+                        <img src="../images/icon/right-arrow.svg" alt="">
+                    </button>
+                </li>
+                <li class="my__deal-item">
+                    <button type="button">
+                        <h3>완료</h3>
+                        <span>3</span>
+                        <img src="../images/icon/right-arrow.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        
+        <!-- 모달창 영역 -->
+        <!-- <div className="fixed inset-0 bg-black/50 z-10">
+        <div class="modaltest">
+            <div class="modla2">
+                
             </div>
-            <div class="open-menu-profile-id">
-              innerjoin
-            </div>
-          </div><!--open-menu-profile-area-->
-
-          <div class="open-menu-text-area">
-            <div>
-              <p class="open-menu-title">
-                "을지로 노포 투어 가이드"
-              </p>
-              <p class="open-menu-contents">
-                을지로의 숨은 맛집을 찾아서 골목 골목<br>
-                사이사이 함께 모험해봐요. 골목 골목<br>
-                사이사이사이 사이 사이 사이 다니자
-              </p>
-            </div>
-            <div class="reservation-status">
-              <img class="reservation-ok-icon" src="/images/reservation-ok-icon.svg">
-              <div class="reservation-ok-text">예약가능</div>
-            </div><!--reservation-status-->
-          </div><!--open-menu-text-area-->
-        </div><!--open-menu-request-box-contents-->
-      </div><!--open-menu-request-box-->
-
-
-      <div class="open-menu-request-box">
-        <div class="open-menu-request-box-contents">
-          <div class="open-menu-profile-area">
-            <div class="open-menu-profile-pic">
-              <img src="/images/profile-pic.jpg" alt="">
-            </div>
-            <div class="open-menu-profile-id">
-              innerjoin
-            </div>
-          </div><!--open-menu-profile-area-->
-
-          <div class="open-menu-text-area">
-            <div>
-              <p class="open-menu-title">
-                "을지로 노포 투어 가이드"
-              </p>
-              <p class="open-menu-contents">
-                을지로의 숨은 맛집을 찾아서 골목 골목<br>
-                사이사이 함께 모험해봐요. 골목 골목<br>
-                사이사이사이 사이 사이 사이 다니자
-              </p>
-            </div>
-            <div class="reservation-status">
-              <img class="reservation-ok-icon" src="/images/reservation-ok-icon.svg">
-              <div class="reservation-ok-text">예약가능</div>
-            </div><!--reservation-status-->
-          </div><!--open-menu-text-area-->
-        </div><!--open-menu-request-box-contents-->
-      </div><!--open-menu-request-box-->
+        </div> -->
 
 
 
-      <div class="open-menu-request-box">
-        <div class="open-menu-request-box-contents">
-          <div class="open-menu-profile-area">
-            <div class="open-menu-profile-pic">
-              <img src="/images/profile-pic.jpg" alt="">
-            </div>
-            <div class="open-menu-profile-id">
-              innerjoin
-            </div>
-          </div><!--open-menu-profile-area-->
+    </main>
 
-          <div class="open-menu-text-area">
-            <div>
-              <p class="open-menu-title">
-                "을지로 노포 투어 가이드"
-              </p>
-              <p class="open-menu-contents">
-                을지로의 숨은 맛집을 찾아서 골목 골목<br>
-                사이사이 함께 모험해봐요. 골목 골목<br>
-                사이사이사이 사이 사이 사이 다니자
-              </p>
-            </div>
-
-            <div class="reservation-status">
-              <img class="reservation-ok-icon" src="/images/reservation-ok-icon.svg">
-              <div class="reservation-ok-text">예약가능</div>
-              <!-- <div class="reservation-text">예약중</div> -->
-              <!-- <img class="reservation-not-icon" src="/images/reservation-not-icon.png"> -->
-
-            </div><!--reservation-status-->
-          </div><!--open-menu-text-area-->
-        </div><!--open-menu-request-box-contents-->
-      </div><!--open-menu-request-box-->
-
-    </div><!--open-menu-boxes-->
-
-  </div><!--open-menu-->
-
-
-  <footer>
-  </footer>
-
-
+        <!-- nav-bar -->
+        <section>
+            <nav class="navbar">
+              <div class="navbar__list">
+                <a href="#" type="button" class="navbar__btn">
+                  <div>
+                    <img src="../images/icon/home.svg" alt="">
+                  </div>
+                  <div class="navbar__text">홈</div>
+                </a>
+                <a href="#" type="button" class="navbar__btn">
+                  <div>
+                    <img src="../images/icon/heart.svg" alt="">
+                  </div>
+                  <div class="navbar__text">찜목록</div>
+                </a>
+                <a href="#" type="button" class="navbar__btn">
+                  <div>
+                    <img src="../images/icon/location-pin.svg" alt="">
+                  </div>
+                  <div class="navbar__text">내위치</div>
+                </a>
+                <a href="#" type="button" class="navbar__btn">
+                  <div>
+                    <img src="../images/icon/message.svg" alt="">
+                  </div>
+                  <div class="navbar__text">메시지</div>
+                </a>
+                <a href="#" type="button" class="navbar__btn">
+                  <div>
+                    <img src="../images/icon/user.svg" alt="">
+                  </div>
+                  <div class="navbar__text">내정보</div>
+                </a>
+              </div>
+            </nav>
+        </section>
+        <!-- nav-bar End-->
+    
 </body>
-
 </html>
